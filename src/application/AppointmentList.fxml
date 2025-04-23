@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1000.0" style="-fx-background-color: #bcd8c1;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AppointmentListController">
+   <children>
+      <ImageView fitHeight="758.0" fitWidth="1031.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@desk2.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="rendezVousTable" layoutX="18.0" layoutY="149.0" prefHeight="478.0" prefWidth="762.0" style="-fx-background-color: #ecf0d6; -fx-background-radius: 40;">
+         <columns>
+            <TableColumn fx:id="nom" prefWidth="73.55555534362793" text="Nom" />
+            <TableColumn fx:id="prenom" prefWidth="86.00000762939453" text="Prenom" />
+            <TableColumn fx:id="sexe" prefWidth="80.66667175292969" text="Sexe" />
+            <TableColumn fx:id="dateNaissance" prefWidth="149.5555419921875" text="Date de naissance" />
+            <TableColumn fx:id="heureDebut" prefWidth="117.11114501953125" text="Heure de début" />
+            <TableColumn fx:id="heureFin" prefWidth="108.0" text="Heure de fin" />
+            <TableColumn fx:id="dateRdv" prefWidth="145.333251953125" text="Date de Rendez-vous" />
+         </columns>
+      </TableView>
+      <Button onAction="#handleSupprimerButton" layoutX="654.0" layoutY="106.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #8A9B8C; -fx-background-radius: 30;" text="Supprimer" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button onAction="#handleModifierButton" layoutX="542.0" layoutY="106.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #8A9B8C; -fx-background-radius: 30;" text="Modifier" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

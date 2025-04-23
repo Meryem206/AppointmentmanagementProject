@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="650.0" prefWidth="794.0" style="-fx-background-color: #bcd8c1;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <ImageView fitHeight="731.0" fitWidth="808.0" layoutX="-1.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@backk.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="36.0" layoutY="30.0" onMouseClicked="#goToPage1" prefHeight="259.0" prefWidth="725.0" style="-fx-background-color: #798a7c; -fx-background-radius: 34;">
+         <children>
+            <ImageView fitHeight="183.0" fitWidth="205.0" layoutX="253.0" layoutY="3.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Free_Vector___Appointment_booking_calendar_design-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <CubicCurve controlX1="-45.608" controlX2="-13.598" controlY1="-57.641" controlY2="111.317" endX="19.79" endY="16.597" fill="#d2fbef" layoutX="256.0" layoutY="70.0" rotate="-151.8" startX="-87.112" startY="10.004" stroke="BLACK" />
+            <CubicCurve controlX1="-31.6" controlX2="-45.747" controlY1="-99.343" controlY2="90.635" endX="31.775" endY="26.981" fill="#d2fbef" layoutX="523.0" layoutY="60.0" rotate="150.8" startX="-82.358" startY="18.233" stroke="BLACK" />
+            <Text fill="#c0e6c9" layoutX="106.0" layoutY="209.0" text="Vous souhaitez ajouter un Rendez-vous ? cliquez ici !">
+               <font>
+                  <Font name="Calibri Bold" size="23.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+
+      <!-- Second clickable card -->
+      <AnchorPane layoutX="38.0" layoutY="339.0" onMouseClicked="#goToPage2" prefHeight="259.0" prefWidth="725.0" style="-fx-background-color: #798a7c; -fx-background-radius: 34;">
+         <children>
+            <ImageView fitHeight="196.0" fitWidth="277.0" layoutX="235.0" layoutY="1.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Download_Patient_waiting_for_visit_doctor_illustration_concept_for_free-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="66.0" fitWidth="79.0" layoutX="177.0" layoutY="49.0" pickOnBounds="true">
+               <image>
+                  <Image url="@task.png" />
+               </image>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="0.8235" green="0.9843" blue="0.9373" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </ImageView>
+            <Text fill="#c0e6c9" layoutX="111.0" layoutY="205.0" text="Cliquez ici pour consulter votre Liste de Rendez-vous ">
+               <font>
+                  <Font name="Calibri Bold" size="23.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+
+   </children>
+</AnchorPane>
