@@ -119,7 +119,7 @@ public class AppointmentmakingController implements BaseLayoutInjectable {
         }
 
         if (prenomField.getText().trim().isEmpty()) {
-            prenomWarningLabel.setText("Veuillez entrer le prénom.");
+            prenomWarningLabel.setText("Veuillez entrer le prÃ©nom.");
             prenomWarningLabel.setVisible(true);
             valid = false;
         }
@@ -154,7 +154,7 @@ public class AppointmentmakingController implements BaseLayoutInjectable {
         }
 
         if (genderGroup.getSelectedToggle() == null) {
-            genderWarningLabel.setText("Veuillez sélectionner un genre.");
+            genderWarningLabel.setText("Veuillez sÃ©lectionner un genre.");
             genderWarningLabel.setVisible(true);
             valid = false;
         }
@@ -203,13 +203,13 @@ public class AppointmentmakingController implements BaseLayoutInjectable {
         LocalTime endTime = endTimeSpinner.getValue();
 
         System.out.println("Nom: " + nom);
-        System.out.println("Prénom: " + prenom);
+        System.out.println("PrÃ©nom: " + prenom);
         System.out.println("Adresse: " + adresse);
         System.out.println("Email: " + email);
         System.out.println("Sexe: " + sexe);
         System.out.println("Date de Naissance: " + dateNaissance);
         System.out.println("Date de Rendez-vous: " + dateRdv);
-        System.out.println("Heure de début: " + timeFormatter.format(startTime));
+        System.out.println("Heure de dÃ©but: " + timeFormatter.format(startTime));
         System.out.println("Heure de fin: " + timeFormatter.format(endTime));
 
         // Save to database
@@ -226,7 +226,7 @@ public class AppointmentmakingController implements BaseLayoutInjectable {
     @FXML
     private void handleAnnulerButtonAction(ActionEvent event) {
         if (baseLayoutController != null) {
-            baseLayoutController.updateActiveMenu(baseLayoutController.ajouterText);
+            baseLayoutController.updateActiveMenu(baseLayoutController.accueilText);
             baseLayoutController.loadPageWithController("Sample.fxml");
         }
     }
